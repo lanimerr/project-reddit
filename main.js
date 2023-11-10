@@ -44,5 +44,12 @@ $('#submit').on('click', function () {
     postSection.append(newPost);
   }
 
+  $('delete').on('click', function (){
+  $('.delete-button').on('click', function() {
+    
+    $(this).closest('li').remove();
+  });
+})
+
   form();
 })
